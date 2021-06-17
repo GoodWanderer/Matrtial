@@ -1,0 +1,77 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0; left: 0;
+  background-color: #18120f;
+  z-index: 100;
+  // .header__content
+  &__content {}
+  // .header__row
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px 0;
+    @media (max-width: $md3+px) {
+      justify-content: center;
+    }
+  }
+  // .header__logo
+  &__logo {
+    text-transform: uppercase;
+    font-family: 'GothamPro';
+    font-weight: bold;
+    color: #ffffff;
+    width: 250px;
+    @media (max-width: $md3+px) {
+      flex: 1 1 100%;
+      text-align: center;
+    }
+    span {
+      color: #ffb400;
+    }
+  }
+  // .header__call
+  &__call {
+    display: flex;
+    align-items: center;
+    @media (max-width: $md3+px) {
+      margin: 15px 0 0;
+    }
+    @media (max-width: $md4+px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  // .header__tel
+  &__tel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 40px 0 0;
+    span {
+      color: #ffb400;
+    }
+    @media (max-width: $md4+px) {
+      margin: 0;
+      flex: 1 1 100%;
+      text-align: center;
+    }
+  }
+  // .header__btn
+  &__btn {
+    font-weight: bold;
+    width: 171px;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    color: #000000;
+    background-color: #ffb400;
+    text-transform: uppercase;
+    @media (max-width: $md4+px) {
+      margin: 15px 0 0;
+    }
+  }
+}
+

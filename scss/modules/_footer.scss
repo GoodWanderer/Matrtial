@@ -1,0 +1,84 @@
+.footer {
+  padding: 38px 0 44px;
+  @media (max-width: $md3+px) {
+    padding: 38px 0 24px;
+  }
+  @media (max-width: $md4+px) {
+    padding: 38px 0 14px;
+  }
+  background-color: #1b120d;
+  // .footer__content
+  &__content {}
+  // .footer__row
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $md3+px) {
+			flex-direction: column;
+		}
+  }
+  // .footer__logo
+  &__logo {
+    width: 240px;
+    font-family: 'GothamPro';
+    font-weight: bold;
+    color: #ffffff;
+    margin: 10px 0 0;
+    @media (max-width: $md3+px) {
+      display: block;
+      text-align: center;
+      margin: 0 auto;
+		}
+    span {
+      color: #ffb400;
+    }
+  }
+  // .footer__info
+  &__info {
+    @media (max-width: $md3+px) {
+      margin: 20px auto 0;
+      text-align: center;
+    }
+  }
+  // .footer__text
+  &__text {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  // .footer__call
+  &__call {
+    display: flex;
+    align-items: center;
+    margin: 24px 0 0;
+    @media (max-width: $md4+px) {
+      flex-wrap: wrap;
+      margin: 24px auto 0;
+      text-align: center;
+    }
+  }
+  // .footer__tel
+  &__tel {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 40px 0 0;
+    @media (max-width: $md4+px) {
+      flex: 1 1 100%;
+      margin: 0 auto;
+    }
+    span {
+      color: #ffb400;
+    }
+  }
+  // .footer__btn
+  &__btn {
+    font-weight: bold;
+    color: #000000;
+    width: 171px;
+    height: 37px;
+    padding: 11px 8px 12px;
+    background-color: #ffb400;
+    @media (max-width: $md4+px) {
+      margin: 20px auto;
+    }
+  }
+}
